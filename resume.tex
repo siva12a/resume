@@ -1,0 +1,200 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{S SIVA PRASAD}
+\hfill{\it\footnotesize}} % ADD UPDATE DATE
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{center}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Email}: ssprasad12a@gmail.com      &
+\hspace{0.35in} \textbf{GitHub}: github.com/siva12a    &
+\hspace{0.35in} 	\textbf{Phone}: +91-8547760645 \\
+
+\textbf{DOB}: 24-10-1994   & 
+\hspace{0.35in} \textbf{Location}: Thiruvananthapuram, Kerala   & 
+\hspace{0.35in} \textbf{Citizenship}: Indian 
+
+
+\end{tabular}
+\end{center}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+
+%\nohyphens{\color{OliveGreen}{Research interests}}
+%& Your favorite topic, another topic, another topic, another topic, another topic \\
+%& \\
+
+
+
+% --- Section: Research experience ---
+
+\nohyphens{\color{OliveGreen}{Work Experience}} 
+& Position : Project Engineer, \textbf{CDAC - Trivandrum}  \hfill May 2018 -- Present \\
+&  \\
+
+& \textbf{Digital System Design - IP core desgin, development and testing} \\
+& Design,development and testing of {\textbf{IIC master controller , IIS master controller, AXI4 Display controller, AXI4 Crossbar}} in Verilog/VHDL/BlueSpec.\\
+& \\
+
+& \textbf{ASIC tapeout of a RISC-V based Single core SoC on 130nm node} \\
+& ASIC realization from RTL to GDS tapeout of a single core SoC design on 130nm node technology.\\
+& Full PnR flow - Preparing constraints, Floorplanning, Power Grid creation, Routing, SignOff timing (MMMC) , SI checking using Cadence EDA tools.  \\
+& \\
+
+& \textbf{ASIC tapeout of a RISC-V based Single core SoC on 180nm node} \\
+& ASIC realization from RTL to GDS tapeout of a single core SoC design on 180nm node technology.\\
+& Floorplanning, Power Grid creation, Routing, SignOff timing (MMMC) , SI checking using Cadence EDA tools.  \\
+& \\
+
+
+& \textbf{Single/Dual/Quad core RISC-V based SoC design and Realization and testing on FPGA} \\
+& Integration of various IP cores (Ethernet, SDRAM, DDR4,UART) to a RISC-V SoC design, simulation and FPGA (Xilinx Ultrascale) validation and Debugging.  \\
+& Paritioning a multi-million gate design and implementing across two FPGA using  Veloce prototyping system and Debugging using Exostiv/ChipScope. \\
+& \\
+
+
+& \textbf{ASIC Backend flow for a Dual core SoC on 28nm node} \\
+& ASIC prototype of a dual core SoC design on 28nm node technology\\
+& \\
+
+& \textbf{PCB board Design} \\
+& Design and development of a prototype PCB board with HDMI PHY, IIC/SPI/QSPI memory and SDRAM.\\
+& \\
+
+% --- Industry Experience
+
+\nohyphens{\color{OliveGreen}{Other Experience}} 
+& \textbf{Digital System Design - IP core desgin, development and testing} \\
+& Design,development and testing of \textbf{RISCV32-IMAF} 3-stage pipeline processor core, AXI4 Crossbar ,AXI4 Clock Converter, SPI/QSPI master controller,  UART controller, AXI4 TO APB converter, JTAG Master controller in CHISEL.  Details of which are available \href{https://github.com/siva12a/ipcores}{here}.\\
+& Designed, Implemented and Successfully tested AES encryption in hardware (VHDL). \\
+& ASIC Implemenation of Single Core SoC from RTL design to GDS using Skywater-Google 130nm OpenSource PDK.  \\
+& PCB design and successful implementation of high end I2S stereo DAC borad for Raspberry Pi board. \\
+& \\
+& \textbf{Sucessfully completed two independent standalone MPW tapeouts on 130nm SKYWATER foundry organised by Google's OpenMPW initiative programme. } Details of MPW tapeout 1 and 2 are available  \href{https://github.com/siva12a/soc_io_expander}{here} and \href{https://github.com/siva12a/caravel_peripheral_extender}{here}.\\
+
+
+
+
+
+\nohyphens{\color{OliveGreen}{Achievements}} 
+& Completed 4 MPW tapeouts (2 in official capacity, 2 personal) over a span of 1 year. \\
+& Best performance Award - CDAC Thiruvananthapuram 2019-2020. \\
+ 
+
+
+% --- Section: Education ---
+
+
+
+
+
+
+
+
+
+
+
+\color{OliveGreen}{Education} 
+& \textbf{M. Tech} \hfill Kalam Technical University \\ 
+& VLSI \& EMBEDDED SYSTEMS \hfill 2016-2018 \\
+& Engineering Research \& Development Centre of India \hfill CGPA -  9.0 \\
+& \\
+
+& \textbf{B. Tech} \hfill University of Kerala \\ 
+& ELECTRONICS \& COMMUNICATION \hfill 2012-2016 \\
+& Sree Chitra Thirunal College of Engineering \hfill CGPA -  8.2 \\
+& \\
+
+& \textbf{HSE} \hfill CBSE \\ 
+& Kendriya Vidyalaya \hfill \% 92.5 \\
+& \\
+
+% --- Uncomment the next few lines if you want to include some courses ---
+%& \textbf{Selected coursework}
+%\begin{itemize}[noitemsep,leftmargin=*]
+%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
+%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
+%\end{itemize} \\
+
+% --- Section: Awards, scholarships, etc. ---
+% --- Note: section title is spread over two lines ---
+
+
+% --- Section: Publications ---
+\nohyphens{\color{OliveGreen}{Presentations \& Workshops}} 
+& \textbf{Presented a paper on Clock Cuncurrent Optimization at RISC-V international conference
+at IIT-Madras} \\
+& \textbf{Conducted workshops on Arduino programming in 2 colleges in Trivandrum} \\
+& \\
+
+{\color{OliveGreen}{Skills}} 
+& \textbf{Programming}\\
+& Proficient in RTL languages : VHDL, Verilog, CHISEL, BlueSpec \\
+& \textbf{Tools}\\
+& ASIC EDA Tools : Genus (synthesis), Innovus (PnR), Tempus (SignOff timing).\\
+& OpenSource EDA Tools : Yosys (synthesis), Magic (PnR).\\
+& PCB development Tools : Allegro, KiCad. \\
+& FPGA development Tools : Vivado, Lattice Diamond\\
+& Microcontroller development - Arduino, ESP8266 for IoT, Raspberry Pi Pico \\
+& Microprocessor development - Raspberry Pi \\
+& \textbf{Other} \\
+& TCL, Python (basic) \\
+
+& \textbf{Languages} \\
+& English, Hindi, Malayalam \\
+& \\
+
+
+% --- Section: Other interests/hobbies ---
+
+\nohyphens{\color{OliveGreen}{Other interests}} & Cricket.\\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
